@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image:url('https://source.unsplash.com/1600x1000/?landscape');
+    color: #ffff;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.card{
+    width: 420px;
+    padding: 3em;
+    background: rgba(12, 12, 12, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(12, 12, 12, 0.05);
+}
+
+.search{
+    text-align: center;
+    padding: 1em;
+}
+
+.search-bar{
+    padding: 5px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+
+    
+}
+.search-bar:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.search-bar:focus {
+    outline: none;
+}
+
+button {
+    padding: 8px 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #000003;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+button:hover,
+button:focus {
+    background-color: #646465;
+    
+}
+
+.weather{
+    padding: 10px 2em;
+
+}
+
+.weather h2 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.temp {
+    font-size: 32px
+}
+
+.humidity {
+    margin: 10px 0;
+}
+
+
+@media screen and (max-width: 375px) {
+    body{
+        background-image:url('https://source.unsplash.com/375x900/?landscaape');
+    }
+    .card {
+        width: 350px;
+        padding: 1.4em;
+    }
+}
+@media screen and (max-width: 600px) {
+    body {
+        background-image:url('https://source.unsplash.com/600x900/?landscaape');
+    }
+    .card {
+        width: 350px;
+        padding: 1.4em;
+    }
+}
